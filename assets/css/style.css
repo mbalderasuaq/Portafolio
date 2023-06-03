@@ -15,7 +15,11 @@
     --color-de-fondo: #212121;
     --color-primario: #FFFFFF;
     --color-secundario: #FF0000;
-    --color-de-acento: #2E2E2E;
+    --color-de-acento: #434343;
+
+    .fa-moon{
+        display: none;
+    }
 }
 
 /* Fuentes */
@@ -35,6 +39,7 @@ body{
     background-color: var(--color-de-fondo);
     font-family: 'Inter var';
     color: var(--color-primario);
+    transition: 0.5s;
 }
 
 .titulo h2{
@@ -106,6 +111,49 @@ body{
     font-size: 1.3rem;
 }
 
+/* Menu mobil */
+
+.menu-mobil-nav{
+    display: none;
+}
+
+#menu-mobil{
+    height: 100vh;
+    position: fixed;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--color-primario);
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+#nav-mobil{
+    margin-top: 70px;
+}
+
+#nav-mobil a{
+    margin-bottom: 15px;
+}
+
+#menu-mobil a{
+    padding: 8px 8px 8px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--color-de-fondo);
+    display: block;
+    transition: .4s;
+}
+
+#menu-mobil i{
+    color: var(--color-de-fondo);
+}
+
+.open-menu{
+    display: none;
+}
+
 /* Presentación */
 
 .presentacion{
@@ -154,7 +202,7 @@ body{
 }
 
 .presentacion-imagen img{
-    width: 31.25rem;
+    width: auto;
     height: 31.25rem;
 }
 
@@ -257,7 +305,7 @@ body{
     margin-right: 0;
 }
 
-/* Habilidades Blandas */
+/* Proyecto */
 
 .mis-proyectos{
     margin-inline: 5rem;
@@ -281,7 +329,7 @@ body{
     background-position: center;
     height: 12rem;
     margin-bottom: 0;
-    box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 40px 1px rgba(0, 0, 0, 0.2);
 }
 
 .proyecto-2{
@@ -290,7 +338,7 @@ body{
     background-position: center;
     height: 12rem;
     margin-bottom: 0;
-    box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 40px 1px rgba(0, 0, 0, 0.2);
 }
 
 .proyecto-3{
@@ -299,7 +347,7 @@ body{
     background-position: center;
     height: 12rem;
     margin-bottom: 0;
-    box-shadow: 2px 4px 20px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 4px 40px 1px rgba(0, 0, 0, 0.2);
 }
 
 .proyecto:last-child{
@@ -412,4 +460,265 @@ body{
     outline: none;
     font-size: 1.1rem;
     margin-left: -1rem;
+}
+
+@media (max-width: 768px) {
+    /* Principal */
+
+    .titulo h2{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto p{
+        width: 100%;
+        font-size: 1rem;
+        margin-block: 3rem;
+    }
+
+    /* Menu Principal */
+
+    .menu{
+        height: 4rem;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .logo{
+        margin-left: 2.5rem;
+        font-size: 1.3rem;
+    }
+
+    .menu a{
+        padding: 0;
+    }
+
+    /* Menu mobil */
+
+    .open-menu{
+        display: flex;
+        margin-right: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* Presentación */
+
+    .presentacion{
+        margin-top: 6rem;
+        margin-inline: 2.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentacion-texto{
+        margin-bottom: 2rem;
+    }
+
+    .presentacion-texto h1{
+        font-size: 1.8rem;
+        margin-block: 0.7rem;
+    }
+
+    .presentacion-texto h2{
+        font-size: 1.3rem;
+    }
+
+    .presentacion-texto h3{
+        font-size: 1.4rem;
+        margin-block: 1rem;
+    }
+
+    .presentacion-texto h4{
+        font-size: 1.2rem;
+    }
+
+    .presentacion-texto p{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .links-sociales i{
+        font-size: 2.1rem;
+    }
+    
+    .presentacion-imagen{
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacion-imagen img{
+        height: 20rem;
+    }
+
+    /* Lo Que Hago */
+
+    .lo-que-hago{
+        padding-top: 5.5rem;
+        margin-inline: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .lo-que-hago .titulo{
+        margin-bottom: 2.5rem;
+    }
+
+    .tarjeta{
+        margin-bottom: 2rem;
+        margin-right: 0;
+        padding: 1.8rem;
+        width: 70%;
+    }
+
+    .tarjeta:last-child{
+        margin-bottom: 0;
+    }
+
+    .tarjeta h4{
+        width: 65%;
+    }
+
+    .tarjeta i{
+        font-size: 3rem;
+    }
+
+    /* Habilidades Tecnicas*/
+
+    .habilidades-tecnicas{
+        padding-top: 5.5rem;
+        margin-inline: 2.5rem;
+    }
+
+    .contenedor-1{
+        flex-direction: column;
+        margin: auto;
+        width: 90%;
+    }
+
+    .tarjeta-1{
+        padding-block: 2rem;
+    }
+    
+    .tarjeta-1:last-child{
+        margin-bottom: 1.5rem;
+    }
+
+    .tarjeta-1 h2{
+        font-size: 4rem;
+    }
+
+    .tarjeta-1 h3{
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    /* Habilidades Blandas */
+
+    .habilidades-blandas{
+        padding-top: 5.5rem;
+        margin-inline: 2.5rem;
+    }
+
+    .tarjeta-2{
+        padding: 1.8rem;
+        margin-bottom: 3rem;
+        margin-right: 0;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-2 h4{
+        text-align: center;
+    }
+
+    .tarjeta-2:last-child{
+        margin-bottom: 0;
+    }
+
+    /* Proyecto */
+
+    .mis-proyectos{
+        margin-inline: 2.5rem;
+        padding-top: 5.5rem;
+    }
+
+    .proyecto{
+        padding-block: 1.8rem;
+        margin-right: 0;
+        width: 90%;
+    }
+
+    .proyecto:last-child{
+        margin-bottom: 0;
+    }
+
+    /* Contacto */
+
+    .contacto{
+        padding-top: 5.5rem;
+        margin-inline: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .formulario{
+        padding: 3rem;
+        height: 60rem;
+    }
+
+    .formulario-grupo-1{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .formulario-grupo-2{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .formulario-grupo-3{
+        margin-bottom: 1rem;
+    }
+
+    .formulario-grupo-4{
+        margin-bottom: 2rem;
+    }
+
+    .formulario-grupo-5{
+        justify-content: center;
+    }
+
+    .grupo{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .grupo-help{
+        margin-bottom: 1rem;
+    }
+
+    .help{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .help input{
+        margin-bottom: 0.6rem;
+    }
+
+    .help label{
+        margin-bottom: 0.8rem;
+    }
+
+    .boton-enviar{
+        padding-inline: 2rem;
+    }
 }

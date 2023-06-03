@@ -23,7 +23,8 @@
             <header>
                 <div class="menu">
                     <a href="#"><h3 class="logo">&lt;Mike Balderas/&gt;</h3></a>
-                    <nav>
+                    <span class="open-menu" onclick="openBtn()"><i class="fas fa-bars"></i></span>
+                    <nav class="nav-menu">
                         <ul>
                             <li><a href="#">Inicio</a></li>
                             <li><a href="#lo-que-hago">Lo Que Hago</a></li>
@@ -31,13 +32,27 @@
                             <li><a href="#habilidades-blandas">Habilidades Blandas</a></li>
                             <li><a href="#mis-proyectos">Mis Proyectos</a></li>
                             <li><a href="#contacto">Contacto</a></li>
-                            <li><i class="fa-solid fa-sun"></i></li>
-                            <li><i class="fa-solid fa-moon"></i></li>
+                            <li><i class="fa-solid fa-sun" onclick="setLightMode()"></i></li>
+                            <li><i class="fa-solid fa-moon" onclick="setDarkMode()"></i></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="menu-mobil">
-
+                    <div id="menu-mobil">
+                        <a class="btn" onclick="closeBtn()">X</a>
+                        <nav id="nav-mobil">
+                            <ul>
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#lo-que-hago">Lo Que Hago</a></li>
+                                <li><a href="#habilidades-tecnicas">Habilidades Técnicas</a></li>
+                                <li><a href="#habilidades-blandas">Habilidades Blandas</a></li>
+                                <li><a href="#mis-proyectos">Mis Proyectos</a></li>
+                                <li><a href="#contacto">Contacto</a></li>
+                                <li><i class="fa-solid fa-sun" onclick="setLightMode()"></i></li>
+                                <li><i class="fa-solid fa-moon" onclick="setDarkMode()"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
 
