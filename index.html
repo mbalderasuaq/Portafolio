@@ -39,9 +39,9 @@
                 </div>
                 <div class="menu-mobil">
                     <div id="menu-mobil">
-                        <a class="btn" onclick="closeBtn()">X</a>
                         <nav id="nav-mobil">
                             <ul>
+                                <li><a class="btn" onclick="closeBtn()">X</a></li>
                                 <li><a href="#">Inicio</a></li>
                                 <li><a href="#lo-que-hago">Lo Que Hago</a></li>
                                 <li><a href="#habilidades-tecnicas">Habilidades Técnicas</a></li>
@@ -62,7 +62,7 @@
                     <h1>Mi nombre es Miguel Balderas</h1>
                     <h4>(Mike Balderas)</h4>
                     <h3>Futuro Ing. de Software</h3>
-                    <p>Soy un estudiante de ingeniería de software con habilidades 
+                    <p>Soy un estudiante de Ingeniería de Software con habilidades 
                         en Java, Kotlin, JavaScript y Python. Soy versátil, orientado 
                         a la resolución de problemas y siempre estoy buscando aprender 
                         y aplicar nuevas tecnologías.</p> 
@@ -247,14 +247,22 @@
                             <label for="help">¿En que te puedo ayudar?</label>
                         </div>
                         <div class="help">
-                            <input type="radio" name="help" id="help">
-                            <label for="help">Una gran idea</label>
-                            <input type="radio" name="help" id="help">
-                            <label for="help">Una duda</label>
-                            <input type="radio" name="help" id="help">
-                            <label for="help">Trabajo</label>
-                            <input type="radio" name="help" id="help">
-                            <label for="help">Otros</label>
+                            <div class="help-input">
+                                <input type="radio" name="help" id="idea">
+                                <label for="idea">Una gran idea</label>
+                            </div>
+                            <div class="help-input">
+                                <input type="radio" name="help" id="duda">
+                                <label for="duda">Una duda</label>
+                            </div>
+                            <div class="help-input">
+                                <input type="radio" name="help" id="trabajo">
+                                <label for="trabajo">Trabajo</label>
+                            </div>
+                            <div class="help-input">
+                                <input type="radio" name="help" id="otros">
+                                <label for="otros">Otros</label>
+                            </div>
                         </div>
                     </div>
                     <div class="formulario-grupo-4">

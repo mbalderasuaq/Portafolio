@@ -4,11 +4,8 @@
     --color-de-fondo: #FFFFFF;
     --color-primario: #212121;
     --color-secundario: #0000FF;
-    --color-de-acento: #FAFAFA;
-
-    .fa-sun{
-        display: none;
-    }
+    --color-de-acento: #FFFFFF;
+    --color-fondo-menu: rgba(0, 0, 0, 0.8);
 }
 
 :root[data-theme="dark"]{
@@ -16,10 +13,15 @@
     --color-primario: #FFFFFF;
     --color-secundario: #FF0000;
     --color-de-acento: #434343;
+    --color-fondo-menu: rgba(0, 0, 0, 0.9);
+}
 
-    .fa-moon{
-        display: none;
-    }
+:root[data-theme="light"] .fa-sun{
+    display: none;
+}
+
+:root[data-theme="dark"] .fa-moon{
+    display: none;
 }
 
 /* Fuentes */
@@ -111,6 +113,10 @@ body{
     font-size: 1.3rem;
 }
 
+#oscuro{
+    display: flex;
+}
+
 /* Menu mobil */
 
 .menu-mobil-nav{
@@ -118,36 +124,49 @@ body{
 }
 
 #menu-mobil{
-    height: 100vh;
+    height: 100%;
     position: fixed;
     width: 0;
     z-index: 1;
     top: 0;
     left: 0;
-    background: var(--color-primario);
     overflow-x: hidden;
     transition: .5s;
-}
-
-#nav-mobil{
-    margin-top: 70px;
+    background-color: var(--color-fondo-menu);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #nav-mobil a{
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+}
+
+#nav-mobil ul{
+    list-style-type: none;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+#menu-mobil li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #menu-mobil a{
-    padding: 8px 8px 8px 10px;
     text-decoration: none;
-    font-size: 15px;
-    color: var(--color-de-fondo);
-    display: block;
+    font-size: 1.5rem;
+    color: #FFFFFF;
     transition: .4s;
+    margin-bottom: 2rem;
 }
 
 #menu-mobil i{
-    color: var(--color-de-fondo);
+    color: #FFFFFF;
+    margin: auto;
+    font-size: 1.8rem;
 }
 
 .open-menu{
@@ -446,6 +465,14 @@ body{
     font-size: 1.1rem;
 }
 
+.help{
+    display: flex;
+}
+
+.help-input{
+    margin-right: 2rem;
+}
+
 .boton-enviar{
     padding-block: 0.8rem;
     padding-inline: 5rem;
@@ -671,7 +698,7 @@ body{
 
     .formulario{
         padding: 3rem;
-        height: 60rem;
+        height: 50rem;
     }
 
     .formulario-grupo-1{

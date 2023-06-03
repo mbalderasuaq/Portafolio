@@ -1,5 +1,5 @@
 function openBtn(){
-    document.getElementById("menu-mobil").style.width = "50%";
+    document.getElementById("menu-mobil").style.width = "100%";
 }
 
 function closeBtn(){
