@@ -343,7 +343,7 @@ body{
 }
 
 .proyecto-1{
-    background-image: url(assets/img/dhisa.png);
+    background-image: url(../img/tada.jpg);
     background-size: cover;
     background-position: center;
     height: 12rem;
@@ -352,7 +352,7 @@ body{
 }
 
 .proyecto-2{
-    background-image: url(assets/img/glaam.jpg);
+    background-image: url(../img/glaam.jpg);
     background-size: cover;
     background-position: center;
     height: 12rem;
@@ -361,7 +361,7 @@ body{
 }
 
 .proyecto-3{
-    background-image: url(assets/img/dhisa.png);
+    background-image: url(../img/dhisa.png));
     background-size: cover;
     background-position: center;
     height: 12rem;
